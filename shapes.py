@@ -40,19 +40,21 @@ class Rectangle:
 	def perimeter(self):
 		width = self.width
 		length = self.length
-		P=2(width+length)
+		P=(2*width)+(2*length)
 		print(P)
 
 class Sphere:
 	def __init__(self,radius):
 		self.radius = radius
 
-	def surface_area(self,surface_area):
-		surface_area= (4*3.14)*(r*r)
+	def surface_area(self):
+		radius=self.radius
+		surface_area= (4*3.14)*(radius*radius)
 		print(surface_area)
 
-	def volume(self,volume):
-		volume = (4/3*3.14)*(r*r*r)
+	def volume(self):
+		radius=self.radius
+		volume = (4/3*3.14)*(radius*radius*radius)
 		print(volume)
 
 
